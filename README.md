@@ -2,12 +2,12 @@
 
 ## How to use
 
-Download the example [or clone the repo](https://github.com/xxxxxxxx):
+[Clone the repo](https://github.com/ConsenSys/avalanche-tutorial-accounting):
 
 <!-- #default-branch-switch -->
 
 ```sh
-cd avalanche-accounting
+cd avalanche-tutorial-accounting
 ```
 
 ## Add configuration values to config.tsx
