@@ -10,8 +10,9 @@
 cd avalanche-tutorial-accounting
 ```
 
-## Add configuration values to config.tsx
+### Add configuration values to config.tsx
 
+```typescript
 const config = {
   INFURA_FUJI_PROVIDER: "xxxxxxxxxx",
   INFURA_IPFS_PROJECT_ID: "xxxxxxxxxx",
@@ -21,10 +22,13 @@ const config = {
   WALLET_ADDRESS: "xxxxxxxxxx",
   PRIVATE_KEY:"xxxxxxxxxx",
 };
+```
 
-### Store the actual values in config_local.tsx, which SHOULD NOT be committed (entry in .gitignore)
+Store the actual values in config_local.tsx, which SHOULD NOT be committed (entry in .gitignore)
 
-## Copy the contents of abi.json to the empty abi.json file
+NOTE: For convenience if you’re doing additional commits, instead of writing these values directly to config.tsx, create a file called “config_local.tsx” in the src directory. You can store these values there, and then copy the entire config structure into config.tsx before running the application. Since the .gitignore file has an entry for config_local.tsx, you should avoid accidentally committing the actual values for all to see. Before any additional commits, remove the changes to config.tsx, so the file reverts to the placeholder strings.
+
+Per the instructions in the tutorial, copy the ABI from Remix into the empty abi.json file.
 
 Install it and run:
 
@@ -36,6 +40,6 @@ npm start
 or:
 
 ```sh
-yarn
+yarn install
 yarn start
 ```
