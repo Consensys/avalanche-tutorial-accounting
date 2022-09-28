@@ -128,8 +128,6 @@ const App = () => {
     const accountsStr = JSON.stringify(dataObject);
     try {
       const added = await ipfs.add(accountsStr);
-      console.log("added ");
-      console.dir(added);
       cid = added.cid;
       setUri(config.INFURA_IPFS_GATEWAY + added.path);
     } catch (error) {
@@ -166,8 +164,6 @@ const App = () => {
   };
 
   const mintNFT = async (uriContainer: any) => {
-    console.log("MINT URI ");
-    console.log(uriContainer.uri);
     const { uri } = uriContainer;
     let nftTxn = await contract.safeMint(config.WALLET_ADDRESS, uri);
     setMinting(true);
