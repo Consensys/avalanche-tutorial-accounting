@@ -1,16 +1,13 @@
-# Avalanche app for double entry accounting demo
+# Avalanche app for double entry accounting
 
-## How to use
-
-[Clone the repo](https://github.com/ConsenSys/avalanche-tutorial-accounting):
-
-<!-- #default-branch-switch -->
+## Clone the repo
 
 ```sh
+git clone git@github.com:ConsenSys/avalanche-tutorial-accounting.git
 cd avalanche-tutorial-accounting
 ```
 
-### Add configuration values to config.tsx
+## Add configuration values to config.tsx
 
 ```typescript
 const config = {
@@ -28,9 +25,11 @@ Store the actual values in config_local.tsx, which SHOULD NOT be committed (entr
 
 NOTE: For convenience if you’re doing additional commits, instead of writing these values directly to config.tsx, create a file called “config_local.tsx” in the src directory. You can store these values there, and then copy the entire config structure into config.tsx before running the application. Since the .gitignore file has an entry for config_local.tsx, you should avoid accidentally committing the actual values for all to see. Before any additional commits, remove the changes to config.tsx, so the file reverts to the placeholder strings.
 
-Per the instructions in the tutorial, copy the ABI from Remix into the empty abi.json file.
+## Copy the ABI
 
-Install it and run:
+Per the instructions in the tutorial, once you've compiled the ERC721 contract in Remix, copy the ABI into the empty abi.json file.
+
+## Install and run
 
 ```sh
 npm install
