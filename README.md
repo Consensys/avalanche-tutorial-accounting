@@ -1,5 +1,9 @@
 # Avalanche app for double entry accounting
 
+## Read the tutorial
+
+ For a complete overview, read this [post on the Infura blog](https://blog.infura.io/post/deploy-an-erc721-smart-contract-and-mint-accounting-nfts-with-infura-and-avalanche-c-chain).
+
 ## Clone the repo
 
 ```sh
